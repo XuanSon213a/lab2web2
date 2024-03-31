@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>School of Computer Science & Engineering Form</title>
+  <style>
+    body{
+      background-color: gainsboro;
+    }
+
+    label {
+      color: red;
+      display: block;
+      margin-bottom: 10px;
+      input {
+        position: absolute;
+        left: 100px;
+        
+      }
+      
+    }
+    header {
+    background-color: rgb(132, 132, 243);
+     border-bottom: solid 1px black;
+    }
+    p{
+      font-size:  20px;;
+    }
+    div {
+      margin-top:-20px;
+      margin-left: 120px;
+    }
+    textarea {
+      width: 400px;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+<h2>School of Computer Science & Engineering</h2>
+</header>
+<p><b>Register Form</b></p>
+<form action="#" method="post">
+  <label for="fullname">Full Name
+  <input type="text" id="fullname" name="fullname" required></label>
+
+  <label for="id">ID
+  <input type="text" id="id" name="id" required></label>
+
+  <label for="email">Email
+  <input type="text" id="email" name="email" required></label>
+
+  <label>Gender:</label>
+  <label for="male">Male
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="female">Female
+  <input type="radio" id="female" name="gender" value="female">
+  </label>
+
+  <label for="fieldofstudy">Field of Study
+  <select id="fieldofstudy" name="fieldofstudy" required>
+    <option value="CS">CS</option>
+    <option value="IM">IM</option>
+    <option value="EE">EE</option>
+    <option value="BA">BA</option>
+    <option value="BE">BE</option>
+  </select>
+  </label>
+
+  <label>Subjects:</label>
+  <div class = "sub">
+  <label><input type="checkbox" name="subjects[]" value="Principle of EE 1"> Principle of EE 1</label>
+  <label><input type="checkbox" name="subjects[]" value="Computer Network"> Computer Network</label>
+  <label><input type="checkbox" name="subjects[]" value="Web Application Development"> Web Application Development</label>
+  <label><input type="checkbox" name="subjects[]" value="Object Oriented Programming"> Object Oriented Programming</label>
+  <label><input type="checkbox" name="subjects[]" value="Computer Graphics"> Computer Graphics</label>
+</div>
+  <label for="comments">Comments:</label>
+  <textarea id="comments" name="comments"></textarea><br>
+
+  <button type="submit">Submit</button>
+  <button type="button" class="cancel">Cancel</button>
+</form>
+</body>
+</html>
